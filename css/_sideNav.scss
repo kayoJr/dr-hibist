@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 1rem;
+    .aside {
+        width: 70%;
+        background-color: $purple;
+        height: 100vh;
+
+        li {
+            padding: 1rem;
+
+            a {
+                color: $white;
+                margin-left: 1rem;
+                font-size: 1.2rem;
+            }
+
+            &:hover {
+                background-color: $green;
+            }
+
+        }
+
+        .logo {
+            background-color: $white;
+            border-radius: 10px;
+            width: 9rem;
+            height: 8rem;
+            margin: 2rem 3rem;
+
+            img {
+                width: 8rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

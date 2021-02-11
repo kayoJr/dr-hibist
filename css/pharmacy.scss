@@ -1,0 +1,20 @@
+@import "utilities";
+@import "variables";
+@import "form";
+@import "sideNav";
+
+.content {
+
+    form {
+        margin-top: 2rem;
+        margin-left: 3rem;
+
+        .formElement {
+            font-size: 1.2rem;
+        }
+
+        input[type=submit] {
+            font-size: 1.2rem;
+        }
+    }
+}

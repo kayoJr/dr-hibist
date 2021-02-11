@@ -1,0 +1,51 @@
+@import "utilities";
+@import "variables";
+@import "table";
+@import "sideNav";
+
+.content {
+    .dates{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $purple;
+        font-weight: bold;
+        margin-top: 1rem;
+        .pickDate {
+            margin-right: 10%;
+            input[type=date] {
+                color: $purple;
+                font-size: 1.3rem;
+                border: 2px solid $green;
+                border-radius: 10px;
+                margin-left: 1rem;
+            }
+        }
+    .formElement {
+        text-align: end;
+        margin-right: 15%;
+        position: relative;
+        input {
+            border: 2px solid $purple;
+            border-radius: 10px;
+            padding: .5rem;
+            background: url("../img/search-solid.svg") no-repeat right;
+            background-size: 1.5rem;
+
+            &:focus {
+                border-color: $green;
+                outline: none;
+                background: none;
+            }
+        }
+
+        label {
+            color: $purple;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-left: 1rem;
+        }
+
+    }
+}
+}

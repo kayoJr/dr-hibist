@@ -1,0 +1,28 @@
+@import "utilities";
+@import "variables";
+@import "form";
+
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: inset -2px -3px 17px rgba(97, 176, 0, 0.253), 3px 3px 50px rgba(114, 65, 230, 0.253);
+    .text{
+        color: #ff0000;
+    }
+}
+
+@media(max-width: 769px) {
+    form {
+        width: auto;
+        box-shadow: none;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .formElement {
+            width: 80%;
+        }
+    }
+}

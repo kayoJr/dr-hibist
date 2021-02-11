@@ -1,0 +1,73 @@
+@import "utilities";
+@import "variables";
+@import "form";
+@import "sideNav";
+
+.content {
+    form {
+        margin-top: 0;
+        margin-left: 3rem;
+
+        .both {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 70%;
+
+            .formElement {
+                width: 40%;
+            }
+        }
+
+        .radioGroup {
+            margin-top: .7rem;
+            color: $green;
+
+            h4 {
+                text-align: center;
+                margin-bottom: .5rem;
+            }
+
+            label {
+                margin-right: 1rem;
+            }
+
+            input {
+                margin-left: 2rem;
+
+                &:after {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 15px;
+                    top: -2px;
+                    left: -1px;
+                    position: relative;
+                    background-color: #ffffff;
+                    content: '';
+                    display: inline-block;
+                    visibility: visible;
+                    border: 1px solid $green;
+                }
+
+                &:checked:after {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 15px;
+                    top: -2px;
+                    left: -1px;
+                    position: relative;
+                    background-color: $purple;
+                    content: '';
+                    display: inline-block;
+                    visibility: visible;
+                    border: 2px solid white;
+                }
+            }
+
+        }
+
+        .formElement {
+            width: 70%;
+        }
+    }
+}
